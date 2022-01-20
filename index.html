@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title> <!--namn på webbläsaren-->
+    <link rel="stylesheet" href="style.css"> <!--här länkas css och html-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!--ovan länkas det till js och fonts från google-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/> 
+</head>
+
+<body> 
+    <!--jag valde dessa två webbtillgänglighet-->
+    <div class="scroll-up-btn"> <!--skrollen på sidan på webbläsaren-->
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar"> <!--navigeringsbar med länkar med olika alternativ-->
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfolio.</span></a></div> <!--portfolio är logo, står med på vänster sida-->
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li> <!--nedan listas olika menyval som också ska navigera användaren till den delen-->
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn"> <!--menyknapp-->
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav> <!--min na-->
+    <!-- home section start -->
+    <section class="home" id="home"> <!--denna sektion ska ses som första sidan på denna webbläsare, inte logo men som första text som användaren ser när webbläsaren öppnas-->
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Neda Ghafoori</div>
+                <div class="text-3">And I'm a future UX designer</div>
+            </div>
+        </div>
+    </section>
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2> <!--titel på sektionen för about me-->
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/banner.jpg" alt=""> <!--här länkas en bild på mig själv-->
+                </div>
+                <div class="column right"> <!--höger koloumn text-->
+                    <div class="text">I'm Neda and I'm a future UX designer</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                    <a href="#">Download CV</a> <!--här länkas det till att ladda ner ett cv-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2> <!--titel på sektionen för skills-->
+            <div class="skills-content">
+                <div class="column left"> <!--vänster koloumn text-->
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+                </div> <!--textarea ovan i p taggarna kan en beskrivning göras gällande mina skills och erfarenheter-->
+                <div class="column right"> <!--denna gör så att alla uppsättningar visas på höger sida-->
+                    <div class="bars">
+                        <div class="info">
+                            <span>Investigation</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line investigation"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Design</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line desgin"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Analysis</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line analysis"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>IT skills</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line it skills"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Team coordination</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line team coordination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2> <!--titel på sektionen för contact-->
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div> <!--undertext under titeln-->
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Neda Ghafoori</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Stockholm, Sweden</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">neda.ghafoori@hotmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div> <!--nedan görs platshållare för användarna-->
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required> <!--platshållare för användaren att fylla i namn-->
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required> <!-- platshållare för användaren att fylla i email-->
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required> <!--platshållare för användaren att fylla i subject-->
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea> <!--platshållare/utrymme för användaren att fylla i text-->
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button> <!-- denna är som en submit knapp-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
